@@ -453,6 +453,7 @@
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
+            z-index: -1;
         }
         &:after{
             content: '';
@@ -881,6 +882,9 @@
 
         }
         &-pyloneffect{
+            &::after{
+                display: none;
+            }
             .el__tabs {
                 padding: 40px 20px;
                 .nav-tabs {
@@ -912,9 +916,15 @@
             }
         }
         &-token{
+            &:before{
+                display: none;
+            }
             .flickity-prev-next-button {
                 margin-top: 30px;
             }
+        }
+        &-pylonform:before{
+            display: none;
         }
         &-portalkey{
 
