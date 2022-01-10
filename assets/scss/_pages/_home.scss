@@ -121,9 +121,9 @@
             height: 464px;
             background: #0A85ED;
             opacity: .6;
+            -webkit-filter: blur(400px);
             filter: blur(400px);
             pointer-events: none;
-            display: none;
         }
         &:after{
             content: '';
@@ -262,6 +262,20 @@
     &-pylonform{
         position: relative;
         z-index: 1;
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 464px;
+            height: 464px;
+            background: #00C05C;
+            opacity: 0.2;
+            -webkit-filter: blur(400px);
+            filter: blur(400px);
+            z-index: -1;
+            pointer-events: none;
+        }
         .container{
             position: relative;
             z-index: 1;
@@ -282,9 +296,9 @@
                 background: #0A85ED;
                 opacity: 0.3;
                 filter: blur(400px);
+                -webkit-filter: blur(400px);
                 z-index: -1;
-
-display: none;            }
+            }
             .dnfix__thumb{
                 padding-top: 123%;
             }
@@ -318,7 +332,6 @@ display: none;            }
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
-            display: none;
         }
         .container{
             position: relative;
@@ -428,7 +441,6 @@ display: none;            }
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
-            display: none;
         }
         &:after{
             content: '';
@@ -439,8 +451,8 @@ display: none;            }
             left: 10%;
             background: #0A85ED;
             opacity: 0.8;
+            -webkit-filter: blur(200px);
             filter: blur(200px);
-            display: none;
         }
         .container{
             position: relative;
@@ -562,12 +574,10 @@ display: none;            }
             height: 500px;
             left: 0;
             top: 0;
-
             background: #0A85ED;
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
-            display: none;
         }
         .container{
             position: relative;
