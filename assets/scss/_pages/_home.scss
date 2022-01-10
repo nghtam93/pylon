@@ -261,19 +261,6 @@
     &-pylonform{
         position: relative;
         z-index: 1;
-        &:before{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 464px;
-            height: 464px;
-            background: #00C05C;
-            opacity: 0.2;
-            filter: blur(400px);
-            z-index: -1;
-            pointer-events: none;
-        }
         .container{
             position: relative;
             z-index: 1;
