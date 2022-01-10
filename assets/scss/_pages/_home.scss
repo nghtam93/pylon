@@ -936,7 +936,7 @@
             animation-name: none;
         }
         .-bg-fix, .-bg-before-fix:before {
-          background-attachment: scroll;
+          background-attachment: initial;
           }
     }
     @media (max-width: 575px){
