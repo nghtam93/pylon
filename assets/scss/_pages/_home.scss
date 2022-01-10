@@ -935,6 +935,9 @@
         .home-power .el__tabs .el__tab__thumb, .home-banner .el__thumb{
             animation-name: none;
         }
+        .-bg-fix, .-bg-before-fix:before {
+          background-attachment: scroll;
+          }
     }
     @media (max-width: 575px){
         &-banner{
