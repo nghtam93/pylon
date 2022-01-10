@@ -591,6 +591,7 @@
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
+            z-index: -1;
         }
         .container{
             position: relative;
