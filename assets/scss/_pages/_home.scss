@@ -123,6 +123,7 @@
             opacity: .6;
             filter: blur(400px);
             pointer-events: none;
+            display: none;
         }
         &:after{
             content: '';
@@ -282,7 +283,8 @@
                 opacity: 0.3;
                 filter: blur(400px);
                 z-index: -1;
-            }
+
+display: none;            }
             .dnfix__thumb{
                 padding-top: 123%;
             }
@@ -316,6 +318,7 @@
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
+            display: none;
         }
         .container{
             position: relative;
@@ -425,6 +428,7 @@
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
+            display: none;
         }
         &:after{
             content: '';
@@ -436,6 +440,7 @@
             background: #0A85ED;
             opacity: 0.8;
             filter: blur(200px);
+            display: none;
         }
         .container{
             position: relative;
@@ -562,6 +567,7 @@
             opacity: 0.8;
             -webkit-filter: blur(300px);
             filter: blur(300px);
+            display: none;
         }
         .container{
             position: relative;
