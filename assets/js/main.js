@@ -1,5 +1,40 @@
 $(document).ready(function(){
 
+    // Click id a
+    var jump=function(e)
+    {
+        $(document).off("scroll");
+        if (e){
+           var url = $(this).attr("href");
+           var id = url.substring(url.lastIndexOf('/') + 1);
+           target = id
+        }else{
+           var target = location.hash;
+        }
+
+        if($(target).offset() != undefined){
+            e.preventDefault();
+            $('html, body').stop().animate({
+                'scrollTop': $(target).offset().top
+            });
+
+            location.hash = target;
+        }
+    }
+
+    $(document).on('click', 'body.home a[href*="#"]', function (e) {
+        console.log(1)
+        $(this).closest('nav').find('li').removeClass('active')
+        $(this).closest('li').addClass('active')
+        //Close menu mb
+        $('.menu-mb__btn').removeClass('active')
+        $('.nav__mobile').removeClass('active')
+        $('body').removeClass('modal-open')
+    });
+
+
+    $('body.home a[href*="#"]').bind("click", jump);
+
     function isEmpty( el ){
           return !$.trim(el.html())
       }
