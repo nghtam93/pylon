@@ -932,8 +932,8 @@
         }
 
         /*Fix*/
-        .home-power .el__tabs .el__tab__thumb{
-
+        .home-power .el__tabs .el__tab__thumb, .home-banner .el__thumb{
+            animation-name: none;
         }
     }
     @media (max-width: 575px){
