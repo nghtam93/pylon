@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gate Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/image-featured.jpg">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+    <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+  <body class="home">
+
+    <header class="header -fix">
+      <div class="container container-xl d-flex align-items-center">
+
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Logo">
+          </a>
+        </h1>
+        <nav class="main__nav ms-auto">
+          <ul class="el__menu">
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="index.html#home-pylon">Pylon</a></li>
+            <li class="menu-item"><a href="index.html#home-power-up-players">Power Up Players</a></li>
+            <li class="menu-item"><a href="index.html#home-form">Pylon Form</a></li>
+            <li class="menu-item"><a href="index.html#home-pylon-effect">Pylon Effect</a></li>
+            <li class="menu-item"><a href="index.html#home-earning-token">Earning Token</a></li>
+            <li class="menu-item"><a href="index.html#home-multiserve">Multiserve</a></li>
+            <li class="menu-item"><a href="index.html#home-portal-key">Mutiserve Portal Key</a></li>
+            <li class="menu-item"><a href="index.html#home-minivault">Pylon’s Level & Minivault</a></li>
+          </ul>
+        </nav>
+        <div class="menu-mb__btn ms-auto" data-id="menu__mobile">
+          <span class="iconz-bar"></span>
+          <span class="iconz-bar"></span>
+          <span class="iconz-bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+
+      <section class="home-banner el">
+        <div class="home-banner__wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="el__meta wow fadeInLeft">
+                  <h2 class="el__title">GG Lab</h2>
+                  <div class="el__sub">an <span style="color: #00C05C;">ecosystem</span> of <span style="color: #0A85ED;">high-level games</span></div>
+                  <div class="el__excerpt">
+                    <p>Directly evaluated and invested byGateGame, based on idea/concept/technical skill/team.</p>
+                    <p>The Games in  GG Lab, in addition to being serious games, will all work with the Pylon network to generate internal tokens for players, as well as participate in Multiverse Events.</p>
+                  </div>
+                  <div>
+                  <a href="" class="btn el__btn">GET STARTED</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__thumb__wrap wow fadeInRight">
+                  <div class="el__thumb">
+                    <img src="assets/img/home-banner-group-02.png" alt="">
+                  </div>
+                  <div class="el__thumb--2">
+                    <img src="assets/img/home-banner-group-01.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="effect-box">
+          <div class="frame--cloubd">
+            <div class="clouds_one"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-pylon" class="home-about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 wow fadeInRight">
+              <div class="el__meta">
+                <header class="sc__header">
+                  <h2 class="sc__header__title">Pylon</h2>
+                  <p class="sc__header__sub">Collectible BEP-721 NFT built on <strong>Binance Smart Chain</strong></p>
+                  <div class="sc__header__excerpt">To "upgrade" players as they play games and equip Pylons.<br>
+                    The details of the “upgrade” will depend on the type and quality of the Pylon equipped.</div>
+                </header>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp">
+              <div class="ratio ratio-16x9 video-play__wrapper">
+                <video id="video" width="400" poster="images/home-about-video.png" preload="metadata">
+                  <source src="" type="video/mp4">
+                </video>
+
+                <div class="play-button-wrapper">
+                  <div title="Play video" class="play-gif btn-video-play">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-power-up-players" class="home-power -bg-fix">
+        <div class="container">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInLeft">Power Up Players</h2>
+            <div class="sc__header__excerpt wow fadeInRight">Pylon Network is a network of energy tower that “ power up” will players as they play games and equip Pylon in <strong>GateGame Metaverse.</strong><br>Power up details will depend on the type and quality of the equipped Pylon.</div>
+          </header>
+
+          <div class="el__tabs wow fadeInUp">
+
+            <p class="text--vetircal">pylon crystal</p>
+            <div class="row">
+              <div class="col-md-5 col-lg-6">
+                <div class="nav-tabs__wrapper">
+                  <ul class="nav nav-tabs" id="powerTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="power01-tab" data-bs-toggle="tab" data-bs-target="#power01" type="button" role="tab" aria-controls="power01" aria-selected="true">
+                        <div class="el__tabs__thumb dnfix__thumb -contain">
+                          <img src="images/home-pylon-img-01.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="power02-tab" data-bs-toggle="tab" data-bs-target="#power02" type="button" role="tab" aria-controls="power02" aria-selected="false">
+                        <div class="el__tabs__thumb dnfix__thumb -contain">
+                          <img src="images/home-pylon-img-02.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="power03-tab" data-bs-toggle="tab" data-bs-target="#power03" type="button" role="tab" aria-controls="power03" aria-selected="false">
+                        <div class="el__tabs__thumb dnfix__thumb -contain">
+                          <img src="images/home-pylon-img-03.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="power04-tab" data-bs-toggle="tab" data-bs-target="#power04" type="button" role="tab" aria-controls="power04" aria-selected="false">
+                        <div class="el__tabs__thumb dnfix__thumb -contain">
+                          <img src="images/home-pylon-img-04.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="power05-tab" data-bs-toggle="tab" data-bs-target="#power05" type="button" role="tab" aria-controls="power05" aria-selected="false">
+                        <div class="el__tabs__thumb dnfix__thumb -contain">
+                          <img src="images/home-pylon-img-05.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="power06-tab" data-bs-toggle="tab" data-bs-target="#power06" type="button" role="tab" aria-controls="power06" aria-selected="false">
+                        <div class="el__tabs__thumb dnfix__thumb -contain">
+                          <img src="images/home-pylon-img-06.png" alt="">
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-6">
+                <div class="tab-content" id="powerTabContent">
+                  <div class="tab-pane fade show active" id="power01" role="tabpanel" aria-labelledby="power01-tab">
+                    <div class="el__tab__thumb">
+                      <img src="images/home-pylon-img2-01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="power02" role="tabpanel" aria-labelledby="power02-tab">
+                    <div class="el__tab__thumb">
+                      <img src="images/home-pylon-img2-02.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="power03" role="tabpanel" aria-labelledby="power03-tab">
+                    <div class="el__tab__thumb">
+                      <img src="images/home-pylon-img2-03.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="power04" role="tabpanel" aria-labelledby="power04-tab">
+                    <div class="el__tab__thumb">
+                      <img src="images/home-pylon-img2-04.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="power05" role="tabpanel" aria-labelledby="power05-tab">
+                    <div class="el__tab__thumb">
+                      <img src="images/home-pylon-img2-05.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="power06" role="tabpanel" aria-labelledby="power06-tab">
+                    <div class="el__tab__thumb">
+                      <img src="images/home-pylon-img2-06.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="home-form" class="home-pylonform">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 wow fadeInLeft">
+                <div class="el__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/pylon-form-img.png" alt="">
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight">
+              <header class="sc__header">
+                <h2 class="sc__header__title">Pylon Form</h2>
+                <div class="sc__header__excerpt mt-5">
+                  <p>Pylon has 2 states, <span style="color: #00C05C;;">Static (Static)</span> and <span style="color: #00C05C;;">Dynamic (Morph)</span>:</p>
+                  <ul>
+                    <li>In Static state, Pylon will take on the image of an energy crystal, with the color depending on the support feature.</li>
+                    <li>Pylon can switch into a <span style="color: #00C05C;;">“Morph”</span> state, which means it transforms into another game-compatible object (eg dragons or spaceships etc).</li>
+                  </ul>
+                  <p>Each pylon can only morph into 1 object in different games. This object color is also specified by the crystal color.</p>
+                </div>
+              </header>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-pylon-effect" class="home-pyloneffect -bg-before-fix">
+        <div class="container">
+          <header class="sc__header text-center wow fadeInUp">
+            <h2 class="sc__header__title">Pylon Effect</h2>
+          </header>
+
+          <div class="el__tabs wow fadeInUp">
+            <ul class="nav nav-tabs" id="pyloneffectTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pyloneffect01-tab" data-bs-toggle="tab" data-bs-target="#pyloneffect01" type="button" role="tab" aria-controls="pyloneffect01" aria-selected="true">Stat</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pyloneffect02-tab" data-bs-toggle="tab" data-bs-target="#pyloneffect02" type="button" role="tab" aria-controls="pyloneffect02" aria-selected="false">Equip</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pyloneffect03-tab" data-bs-toggle="tab" data-bs-target="#pyloneffect03" type="button" role="tab" aria-controls="pyloneffect03" aria-selected="false">combination</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pyloneffectTabContent">
+              <div class="tab-pane fade show active" id="pyloneffect01" role="tabpanel" aria-labelledby="pyloneffect01-tab">
+                <p>Players who equip Pylon will recevie buffs depend on the type of Pylon and the game being played</p>
+              </div>
+              <div class="tab-pane fade" id="pyloneffect02" role="tabpanel" aria-labelledby="pyloneffect02-tab">
+                <p><strong>Static:</strong> Using Pylon’s “Static” state is like using a crystal to insert gems into a weapon.</p>
+                <p><strong>Morph:</strong> Use Pylon’s “Morph” state to transform into an enquivalent in-game item i.e spaceship in 3D spacehooter game or create a “fire bullet” effect for a spaceship.</p>
+              </div>
+              <div class="tab-pane fade" id="pyloneffect03" role="tabpanel" aria-labelledby="pyloneffect03-tab">
+                <p>Pylons can combine energies to create a new pylon</p>
+              </div>
+            </div>
+          </div>
+          <div class="el__box">
+              <div class="row gx-lg-5">
+                <div class="col-3 wow fadeInUp" data-wow-duration="1s">
+                    <div class="el__box__thumb ef--zoomin">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img-01.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3 wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="el__box__thumb ef--zoomin">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img-02.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3 wow fadeInUp" data-wow-duration="2s">
+                    <div class="el__box__thumb ef--zoomin">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img-03.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-3 wow fadeInUp" data-wow-duration="2.5s">
+                    <div class="el__box__thumb ef--zoomin">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img-04.png" alt="">
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="el__box2 wow fadeInUp">
+              <div class="row">
+                <div class="el__col col-2">
+                    <div class="el__box2__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img2-01.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="el__col col-2">
+                    <div class="el__box2__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img2-02.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="el__col col-2">
+                    <div class="el__box2__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img2-03.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="el__col col-2">
+                    <div class="el__box2__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img2-04.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="el__col col-2">
+                    <div class="el__box2__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img2-05.png" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="el__box2__thumb">
+                      <div class="dnfix__thumb -contain">
+                        <img src="images/home-pyloneffect-img2-06.png" alt="">
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="home-earning-token" class="home-token">
+        <div class="container">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInLeft">Earning Token</h2>
+            <div class="sc__header__excerpt wow fadeInRight">When a player plays games in GG Metaverse, and equips pylon, the pylon becomes active and allows <br class="pc">the player to earn tokens intrinsic to the Game being played</div>
+          </header>
+          <div class="wow fadeInUp">
+            <div class="home-token__slider flickity" data-flickity='{ "wrapAround": true, "pageDots": false}'>
+              <div class="col-12 slider__item__wrap">
+                  <div class="slider__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-token-img-01.png" alt="">
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 slider__item__wrap">
+                  <div class="slider__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-token-img-02.png" alt="">
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 slider__item__wrap">
+                  <div class="slider__item__thumb">
+                    <div class="dnfix__thumb -contain">
+                      <img src="images/home-token-img-03.png" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="home-multiserve" class="home-multiserve -bg-fix">
+        <div class="container">
+          <header class="sc__header text-center">
+            <h2 class="sc__header__title wow fadeInLeft">Multiserve</h2>
+            <div class="sc__header__excerpt wow fadeInRight">Once the GateGame ecosystem is activated, with more Pylons put into the network and the larger <br class="pc">the energy generated, when reaching the overload threshold, the space dimension will be broken <br class="pc">and create portals to other dimensions.</div>
+          </header>
+
+          <div class="row row__wrap align-items-center">
+            <div class="col-md-4 wow fadeInLeft">
+              <div class="el__thumb">
+                <img src="images/home-multiserve-left.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp">
+              <div class="el__thumb__center">
+                <div class="el__thumb">
+                  <img src="images/home-multiserve-center.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 wow fadeInRight">
+              <div class="el__thumb">
+                <img src="images/home-multiserve-right.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-portal-key" class="home-portalkey -bg-fix">
+        <div class="container">
+          <header class="sc__header text-center wow fadeInUp">
+            <h2 class="sc__header__title">Mutiserve Portal Key</h2>
+          </header>
+          <div class="row gx-lg-5">
+            <div class="col-lg-6 order-lg-2 wow fadeInRight">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain -pt100">
+                        <img src="images/home-portalkey-img-01.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain -pt100">
+                        <img src="images/home-portalkey-img-02.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain -pt100">
+                        <img src="images/home-portalkey-img-03.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="el__item">
+                    <div class="el__item__thumb">
+                      <div class="dnfix__thumb -contain -pt100">
+                        <img src="images/home-portalkey-img-04.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInLeft">
+              <div class="el__excerpt">
+                <p><strong>To enter the Multiverse: the Portal key is required – which can be obtained from the Minivault or GG Box, special GateGame events, or trade.</strong></p>
+                <p>On the Portal Key, there will be sockets for mounting different “Source Crystal”. These “Source Crystal” will spawn when the player plays games in the GG Metaverse (while equipping Pylon) according to the criteria of time, achievement and randomness.</p>
+
+                <p>Each Multiverse Transverse Portal will require a Portal Key with a different number of “Source Crystal”, the higher the Portal level, the more “Source Crystal” will be required (even more Portal Keys)</p>
+
+                <p>Beyond the Portal: This dimension can be parallel worlds (parallel worlds) or a completely different world. This will give rise to the Multiverse system with the properties “Unique”, “Unpredictable”. The player can pass through this Portal will have access to more complex worlds and bring more advantages/ generate more resources/ token/ items.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="home-minivault" class="home-minivault">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-4 wow fadeInLeft">
+              <header class="sc__header text-center">
+                <h2 class="sc__header__title">Pylon’s Level & Minivault</h2>
+              </header>
+            </div>
+            <div class="col-lg-8 wow fadeInRight">
+              <div class="sc__header__excerpt text-lg-start text-center">
+                <p>When open the vault the user will receive the Pylons randomly. The higher the minivault level, the higher the level Pylons will be granted.</p>
+                <p>
+                The higher the level Minivault is, the more likely the Minivault will have Portal Key/Source Crystal.<br>
+                Each Minivault will have a special pylon with a unique color and visual effect
+                that will never appear again.</p>
+                <p>User can combine Minivault to become 1 Vault.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="el__box wow fadeInUp">
+            <div class="el__box__header">
+              <div class="el__box__number">3</div>
+              <h3 class="el__box__title">levels of Minivault</h3>
+            </div>
+            <div class="el__box__items d-flex">
+                <div class="el__box__item">
+                  <p>01.</p>
+                  <p>Rare</p>
+                </div>
+                <div class="el__box__item">
+                  <p>02.</p>
+                  <p>Artifact</p>
+                </div>
+                <div class="el__box__item">
+                  <p>03.</p>
+                  <p>Legendary</p>
+                </div>
+            </div>
+          </div>
+          <div class="el__box wow fadeInUp" data-wow-duration="1s">
+            <div class="el__box__header">
+              <div class="el__box__number">6</div>
+              <h3 class="el__box__title">levels of Pylon</h3>
+            </div>
+            <div class="el__box__items d-flex">
+                <div class="el__box__item">
+                  <p>01.</p>
+                  <p>Common</p>
+                </div>
+                <div class="el__box__item">
+                  <p>02.</p>
+                  <p>Uncommon</p>
+                </div>
+                <div class="el__box__item">
+                  <p>03.</p>
+                  <p>Rare</p>
+                </div>
+                <div class="el__box__item">
+                  <p>04.</p>
+                  <p>Artifact</p>
+                </div>
+                <div class="el__box__item">
+                  <p>05.</p>
+                  <p>Legendary</p>
+                </div>
+                <div class="el__box__item">
+                  <p>06.</p>
+                  <p>Ancient</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-join">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="el__title">
+                Join the movement to decentralize the Metaverse
+              </div>
+            </div>
+            <div class="col-lg-4 ms-auto">
+                <a href="" class="btn">Join the Efinity Crowdloan</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-menu">
+        <div class="container">
+          <ul>
+            <li><a href="">Explore</a></li>
+            <li><a href="">Loot Box</a></li>
+            <li><a href="">Launchpad</a></li>
+            <li><a href="">Staking</a></li>
+            <li><a href="">Game stores</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__wrap">
+          <div class="container">
+           <div class="row gx-lg-5">
+             <div class="col-md-3">
+               <div class="footer__logo">
+                  <a href="index.html">
+                    <img src="images/footer-logo.svg" alt="Logo">
+                  </a>
+                </div>
+             </div>
+             <div class="col-md-2">
+                <div class="footer__item">
+                 <h3 class="footer__title">Community</h3>
+                 <ul class="footer__list">
+                   <li><a href="">Suggest Feature</a></li>
+                   <li><a href="">Help Center</a></li>
+                 </ul>
+                </div>
+             </div>
+             <div class="col-md-2">
+                <div class="footer__item">
+                 <h3 class="footer__title">Legal</h3>
+                 <ul class="footer__list">
+                   <li><a href="">Privacy policy</a></li>
+                   <li><a href="">Terms and conditions</a></li>
+                   <li><a href="">Cookie policy</a></li>
+                 </ul>
+                </div>
+             </div>
+             <div class="col-md-5">
+                <div class="footer__item">
+                  <h3 class="footer__title">Connect social</h3>
+                  <ul class="footer__socical">
+                    <li><a href="" target="_blank"><span class="icon-telegram"></span>Telegram</a></li>
+                    <li><a href="" target="_blank"><span class="icon-youtube"></span>YouTube</a></li>
+                    <li><a href="" target="_blank"><span class="icon-instagram"></span>Instagram</a></li>
+                    <li><a href="" target="_blank"><span class="icon-wechat"></span>WeChat</a></li>
+                    <li><a href="" target="_blank"><span class="icon-linkedin"></span>Linkedin</a></li>
+                    <li><a href="" target="_blank"><span class="icon-twitter"></span>Twitter</a></li>
+                    <li><a href="" target="_blank"><span class="icon-facebook-circle"></span>Facebook</a></li>
+                    <li><a href="" target="_blank"><span class="icon-zalo"></span>Zalo</a></li>
+                  </ul>
+                </div>
+             </div>
+           </div>
+
+
+
+          </div>
+        </div>
+      </footer>
+
+      <nav id="menu__mobile" class="nav__mobile">
+          <div class="nav__mobile__content px-3">
+            <ul class="nav__mobile--ul">
+              <li class="menu-item active"><a href="index.html">Home</a></li>
+              <li class="menu-item"><a href="index.html#home-pylon">Pylon</a></li>
+              <li class="menu-item"><a href="index.html#home-power-up-players">Power Up Players</a></li>
+              <li class="menu-item"><a href="index.html#home-form">Pylon Form</a></li>
+              <li class="menu-item"><a href="index.html#home-pylon-effect">Pylon Effect</a></li>
+              <li class="menu-item"><a href="index.html#home-earning-token">Earning Token</a></li>
+              <li class="menu-item"><a href="index.html#home-multiserve">Multiserve</a></li>
+              <li class="menu-item"><a href="index.html#home-portal-key">Mutiserve Portal Key</a></li>
+              <li class="menu-item"><a href="index.html#home-minivault">Pylon’s Level & Minivault</a></li>
+            </ul>
+          </div>
+      </nav>
+
+    </div> <!-- .wrapper -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

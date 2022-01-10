@@ -1,0 +1,135 @@
+.footer{
+	position: relative;
+	padding: 50px 0 35px;
+	background: #1D1F22;
+	font-size: 14px;
+	color: #F9F9F9;
+	a{
+		color: #F9F9F9;
+		transition: all .5s;
+		&:hover{
+			color: #0a85ed;
+		}
+	}
+	&-join{
+		padding:32px 0;
+		background-image: url(../img/footer-join-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		.el__title{
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 48px;
+			letter-spacing: 0.02em;
+			background: -webkit-linear-gradient(25deg, #F9F9F9 0.62%, #28BFFF 83.45%);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		}
+	}
+	&-menu{
+		font-family: Poppins;
+		background: linear-gradient(90.02deg, rgba(25, 27, 31, 0) 0.01%, #191B1F 50%, rgba(25, 27, 31, 0) 99.98%);
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li{
+
+			}
+			a{
+				display: block;
+				padding:32px 32px;
+				font-weight: normal;
+				font-size: 14px;
+				text-align: center;
+				letter-spacing: 0.01em;
+				color: #F9F9F9;
+				transition: all .5s;
+				&:hover{
+					color: #0a85ed;
+				}
+			}
+		}
+	}
+
+	&__title {
+	    font-family: Poppins;
+	    font-weight: 600;
+	    font-size: 24px;
+	    letter-spacing: 0.02em;
+	    color: #0A85ED;
+	    margin-bottom: 16px;
+	}
+	&__list{
+		li{
+			margin-bottom: 16px;
+		}
+	}
+
+	&__logo{
+		margin-top: 10px;
+		margin-bottom: 16px;
+		img{
+			width: auto;
+			max-height:64px;
+		}
+	}
+
+	&__socical{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		--bs-gutter-x: 1rem;
+	    margin-right: calc(var(--bs-gutter-x) * -.5);
+	    margin-left: calc(var(--bs-gutter-x) * -.5);
+
+		li{
+		    flex: 0 0 auto;
+		    width: 33.33333%;
+		    max-width: 100%;
+		    padding-right: calc(var(--bs-gutter-x) * .5);
+		    padding-left: calc(var(--bs-gutter-x) * .5);
+		    margin-bottom: var(--bs-gutter-x);
+		}
+		a{
+			display: flex;
+			align-items:center;
+			padding: 8px 14px;
+			background: linear-gradient(103.02deg, #23262B 19.47%, #28292F 114.75%);
+			border-radius: 12px;
+
+			&:hover{
+				color: #fff;
+    			background: #0c72c8;
+			}
+		}
+		span{
+			width: 24px;
+			margin-right: 8px;
+			line-height: 24px;
+			color: #fff;
+			font-size: 24px;
+			transition: all .5s;
+		}
+	}
+
+	@media (max-width: 1199px){
+		&-menu ul a{
+			padding: 24px 32px;
+		}
+		&-join .el__title {
+		    font-size: 28px;
+		    line-height: 38px;
+		}
+	}
+	@media (max-width: 991px){
+
+	}
+	@media (max-width: 767px){
+
+	}
+	@media (max-width: 575px){
+
+	}
+}
