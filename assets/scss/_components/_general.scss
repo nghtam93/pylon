@@ -166,7 +166,7 @@
     position: absolute;
     left: 0 !important;
     height: 100%;
-    width: 700%;
+    width: 300%;
     bottom: 0 !important;
     margin: 0 !important;
     -webkit-transform: translate3d(0, 0, 0);
@@ -319,7 +319,7 @@ $shadows-big: multiple-box-shadow(100);
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
   .-bg-fix, .-bg-before-fix:before {
-  background-attachment: scroll;
+    background-attachment: scroll;
   }
 }
 
@@ -338,7 +338,9 @@ $shadows-big: multiple-box-shadow(100);
 .btn-video-play:hover{transform:scale(1.1);}
 @media (max-width: 767px){
     .effect-box{
-        display: none;
+        .frame--cloubd{
+            width: 200%;
+        }
     }
 }
 @media (max-width: 575px){
