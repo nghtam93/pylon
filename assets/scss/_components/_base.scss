@@ -169,10 +169,6 @@ strong{
   transform: none !important;
 }
 
-
-
-
-
 /**/
 .dnfix__thumb{
     position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;
@@ -182,9 +178,6 @@ strong{
         padding-top: 100%;
     }
 }
-
-
-
 
 
 /* Text truncate */
@@ -283,10 +276,6 @@ br{
 
     }
     @media (max-width: 575px){
-        padding: 6px 8px;
-        font-size: 14px;
-        line-height: 24px;
-        min-width: 100px;
     }
 }
 
@@ -309,14 +298,15 @@ br{
 }
 
 @media (max-width: 1199px){
+    body {
+        --header-height: 60px;
+    }
     .flickity-button {
 
     }
 }
 @media (max-width: 991px){
-    body {
-        --header-height: 80px;
-    }
+
 }
 
 @media (min-width: 768px){

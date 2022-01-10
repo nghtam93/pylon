@@ -518,7 +518,7 @@
                 max-width: 840px;
                 height: 100%;
                 margin: 0 auto;
-                background: url(../img/lightning.png);
+                background-image: url(../img/lightning.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
@@ -755,13 +755,12 @@
             }
         }
         &-about{
+            padding: 80px 0 0px;
             &:after{
                 display: none;
             }
             .sc__header {
                 padding-left: 0;
-                margin-bottom: 50px;
-                text-align: center;
             }
         }
         &-power{
@@ -785,6 +784,7 @@
 
         }
         &-pylonform{
+            padding: 0 0 40px;
             .el__item__thumb {
                 max-width: 80%;
                 margin: 0 auto;
@@ -795,16 +795,175 @@
                 padding: 40px 30px;
             }
         }
+        &-portalkey{
+            .el__box {
+                max-width: 400px;
+                margin: auto;
+            }
+            .el__item {
+                margin-bottom: 30px;
+            }
+        }
         &-minivault{
             .el__box {
                 display: block;
+                &__header {
+                    margin-bottom: 10px;
+                }
+                &__items{
+                    flex-wrap: wrap;
+                }
+                &__item{
+                    margin-bottom: 10px;
+                }
             }
+
+
         }
-    }
-    @media (max-width: 767px){
 
     }
+    @media (max-width: 767px){
+        &-banner{
+            padding: 100px 0 0px;
+            &::before {
+                height: 190px;
+            }
+            &::after {
+                bottom: -5px;
+            }
+            &__wrap {
+                position:relative;
+                top: 0;
+                height: 100%;
+            }
+            .el__meta {
+                text-align: center;
+            }
+        }
+        &-about {
+            margin-top: 0;
+        }
+        &-power{
+            .el__tabs{
+                .el__tab__thumb {
+                    width: calc(100% + 100px);
+                    margin-top: -100px;
+                    left: -50px;
+                    margin-bottom: 0;
+                }
+                .nav-tabs__wrapper {
+                    max-width: 100%;
+                }
+            }
+            .text--vetircal {
+                position: relative;
+                transform: rotate(0deg);
+                writing-mode: inherit;
+            }
+
+        }
+        &-pyloneffect{
+            .el__tabs {
+                padding: 40px 20px;
+                .nav-tabs {
+                    justify-content: start;
+                    margin-bottom: 20px;
+                }
+
+                .nav-item:not(:last-child) {
+                    margin-right: 16px;
+                }
+                .tab-content {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+        &-multiserve{
+            .el__thumb{
+                text-align: center;
+            }
+            .row__wrap:before {
+                top: 20%;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 80%;
+                margin: 0 auto;
+                background-image: url(../img/lightning-mb.png);
+            }
+        }
+        &-token{
+            .flickity-prev-next-button {
+                margin-top: 30px;
+            }
+        }
+        &-portalkey{
+
+        }
+    }
     @media (max-width: 575px){
+        &-banner{
+            .el__title {
+                font-size: 32px;
+                line-height: 36px;
+            }
+            .el__sub {
+                margin-top: 18px;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        &-power{
+            .el__tabs{
+                .nav-item {
+                    width: 33.33333%;
+                }
+                &__thumb {
+                    width: 75px;
+                    padding-top: 120px;
+                }
+            }
+            .text--vetircal {
+                font-size: 10px;
+                letter-spacing: .8rem;
+            }
+        }
+        &-pyloneffect{
+            .el__box {
+                margin-bottom: 32px;
+            }
+            .el__tabs .nav-link {
+                min-width: auto;
+                font-size: 14px;
+            }
+            .el__box__thumb .dnfix__thumb {
+                border-radius: 8px;
+            }
+        }
+        &-multiserve{
+            padding: 100px 0 40px;
+            .row__wrap:before {
+                top: 30%;
+                height: 70%;
+            }
+        }
+        &-minivault{
+            .el__box {
+                padding: 20px 20px;
+                &__item{
+                    font-size: 18px;
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+
+                    p:first-child {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+        }
 
     }
 
