@@ -970,6 +970,13 @@
         .home-pylonform .el__item__thumb:before, .home-token:after, .home-minivault::before,.home-about:before{
             display: none;
         }
+
+        .clouds_one {
+            -webkit-animation: cloud_one 200s linear infinite;
+            -moz-animation: cloud_one 200s linear infinite;
+            -o-animation: cloud_one 200s linear infinite;
+        }
+
     }
     @media (max-width: 575px){
         &-banner{
