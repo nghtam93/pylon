@@ -935,6 +935,9 @@
         .home-power .el__tabs .el__tab__thumb, .home-banner .el__thumb{
             animation-name: none;
         }
+        .home-pylonform .el__item__thumb:before, .home-token:after, .home-minivault::before{
+            display: none;
+        }
     }
     @media (max-width: 575px){
         &-banner{
