@@ -12,6 +12,7 @@
         left: 0;
         width: 100%;
         background: rgba(7, 18, 40, .9);
+        -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         // animation:stuckMoveDown .6s;
     }
