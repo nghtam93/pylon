@@ -330,6 +330,15 @@ $shadows-big: multiple-box-shadow(100);
     overflow:hidden;
     margin-top:auto;
     transition:all .5s;
+
+    &.-object-cover{
+        >*{
+            object-fit: cover;
+        }
+    }
+}
+.ratio-3x4 {
+    --bs-aspect-ratio: calc(4 / 3 * 100%);
 }
 
 .el__col{display:flex;flex-direction:column;    /* height: 100%; */}
