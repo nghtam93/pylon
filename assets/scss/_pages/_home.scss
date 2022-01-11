@@ -219,6 +219,7 @@
             background: linear-gradient(90deg, rgba(0, 192, 92, 0.07) 0%, rgba(9, 154, 248, 0.07) 100%);
             -webkit-backdrop-filter: blur(36px);
             backdrop-filter: blur(36px);
+            -webkit-border-radius: 16px;
             border-radius: 16px;
             &__thumb{
                 width: 90px;
@@ -245,6 +246,7 @@
                 padding: 0;
                 background: transparent;
                 border: 2px solid transparent;
+                -webkit-border-radius: 16px;
                 border-radius: 16px;
                 transition: all .5s;
                 &:hover,&.active{
@@ -367,6 +369,7 @@
             background: rgba(230, 236, 255, 0.05);
             -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px);
+            -webkit-border-radius: 16px;
             border-radius: 16px;
             .nav-tabs{
                 border-bottom: 0;
@@ -382,6 +385,7 @@
                 border: 0;
                 margin-bottom: 0;
                 background: #0A85ED;
+                -webkit-border-radius: 8px;
                 border-radius: 8px;
                 font-weight: bold;
                 font-size: 16px;
@@ -408,9 +412,12 @@
         .el__box{
             margin-bottom: 48px;
             &__thumb{
+                position: relative;
+                -webkit-border-radius: 16px;
+                border-radius: 16px;
+                box-shadow: 0px 0px 21px rgba(9, 154, 248, 0.37);
+                overflow: hidden;
                 .dnfix__thumb{
-                    border-radius: 16px;
-                    box-shadow: 0px 0px 21px rgba(9, 154, 248, 0.37);
                     padding-top: 160%;
                 }
             }
@@ -650,6 +657,7 @@
             display: flex;
             align-items: center;
             background: radial-gradient(47.2% 133.68% at 50% 12.11%, rgba(10, 133, 237, 0.04) 0%, rgba(4, 78, 141, 0.04) 100%);
+            -webkit-border-radius: 16px;
             border-radius: 16px;
             width: 100%;
             padding: 26px 60px;
@@ -1028,6 +1036,7 @@
                 font-size: 14px;
             }
             .el__box__thumb .dnfix__thumb {
+                -webkit-border-radius: 8px;
                 border-radius: 8px;
             }
         }
