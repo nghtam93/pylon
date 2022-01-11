@@ -331,7 +331,10 @@ $shadows-big: multiple-box-shadow(100);
     overflow:hidden;
     margin-top:auto;
     transition:all .5s;
-
+    >*{
+        border-radius: 20px;
+        overflow: hidden;
+    }
     &.-object-cover{
         >*{
             object-fit: cover;
