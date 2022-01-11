@@ -332,6 +332,7 @@ $shadows-big: multiple-box-shadow(100);
     margin-top:auto;
     transition:all .5s;
     >*{
+        font-size: 0;
         border-radius: 20px;
         -webkit-border-radius:20px;
         overflow: hidden;
