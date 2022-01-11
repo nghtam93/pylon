@@ -146,6 +146,9 @@
             width: calc(100% + 150px);
             left: -150px;
             --bs-aspect-ratio: calc(10 / 16 * 100%);
+            video{
+                object-fit: cover;
+            }
         }
         .sc__header{
             padding-left:100px;
